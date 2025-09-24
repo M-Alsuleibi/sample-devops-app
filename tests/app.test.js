@@ -59,7 +59,14 @@ describe('Sample DevOps App', () => {
     const res = await request(app).get('/api/does-not-exist');
     expect(res.status).toBe(404);
     expect(res.body.error).toBe('Not found');
+
   });
+	 //  test('GET /health returns wrong uptime', async () => {
+  //   const res = await request(app).get('/health');
+  //   // Deliberately incorrect assertion: expecting a non-existent property
+  //   expect(res.body).toHaveProperty('incorrect_property');
+  // });
+
 });
 
 

@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN  npm ci
 COPY . .
 EXPOSE 3000
-ENV PORT=3000
+RUN npm test
 CMD ["node", "server.js"]
 
 
