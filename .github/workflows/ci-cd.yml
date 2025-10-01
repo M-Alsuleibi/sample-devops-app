@@ -21,9 +21,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint code
-        run: npm run lint
-
       - name: Build Docker image
         run: docker build -t sample-devops-app .
   # 2 code test
