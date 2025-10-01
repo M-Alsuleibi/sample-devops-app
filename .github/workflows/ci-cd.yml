@@ -1,5 +1,4 @@
 name: CI-CD TO AWS ECR
-run-name: CI-CD TO AWS ECR
 
 on:
   push:
